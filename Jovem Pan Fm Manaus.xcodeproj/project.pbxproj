@@ -15,6 +15,7 @@
 		832576541DB8FCE7009B33EC /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832576531DB8FCE7009B33EC /* RadioPlayer.swift */; };
 		832576571DB8FDD7009B33EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832576561DB8FDD7009B33EC /* AVFoundation.framework */; };
 		832576591DB8FDE0009B33EC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832576581DB8FDE0009B33EC /* MediaPlayer.framework */; };
+		83AEFCE31DB9458200E453E2 /* FacebookWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AEFCE21DB9458200E453E2 /* FacebookWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		832576531DB8FCE7009B33EC /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
 		832576561DB8FDD7009B33EC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		832576581DB8FDE0009B33EC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		83AEFCE21DB9458200E453E2 /* FacebookWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FacebookWebView.swift; path = ../FacebookWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		832576401DB8FC21009B33EC /* Jovem Pan Fm Manaus */ = {
 			isa = PBXGroup;
 			children = (
+				83AEFCE21DB9458200E453E2 /* FacebookWebView.swift */,
 				832576411DB8FC22009B33EC /* AppDelegate.swift */,
 				832576431DB8FC22009B33EC /* ViewController.swift */,
 				832576451DB8FC22009B33EC /* Main.storyboard */,
@@ -159,6 +162,7 @@
 				832576541DB8FCE7009B33EC /* RadioPlayer.swift in Sources */,
 				832576441DB8FC22009B33EC /* ViewController.swift in Sources */,
 				832576421DB8FC22009B33EC /* AppDelegate.swift in Sources */,
+				83AEFCE31DB9458200E453E2 /* FacebookWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +324,7 @@
 				832576521DB8FC22009B33EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
