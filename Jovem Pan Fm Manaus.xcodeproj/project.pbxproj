@@ -12,6 +12,9 @@
 		832576471DB8FC22009B33EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832576451DB8FC22009B33EC /* Main.storyboard */; };
 		832576491DB8FC22009B33EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832576481DB8FC22009B33EC /* Assets.xcassets */; };
 		8325764C1DB8FC22009B33EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8325764A1DB8FC22009B33EC /* LaunchScreen.storyboard */; };
+		832576541DB8FCE7009B33EC /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832576531DB8FCE7009B33EC /* RadioPlayer.swift */; };
+		832576571DB8FDD7009B33EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832576561DB8FDD7009B33EC /* AVFoundation.framework */; };
+		832576591DB8FDE0009B33EC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832576581DB8FDE0009B33EC /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		832576481DB8FC22009B33EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8325764B1DB8FC22009B33EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8325764D1DB8FC22009B33EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832576531DB8FCE7009B33EC /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		832576561DB8FDD7009B33EC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		832576581DB8FDE0009B33EC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832576591DB8FDE0009B33EC /* MediaPlayer.framework in Frameworks */,
+				832576571DB8FDD7009B33EC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				832576401DB8FC21009B33EC /* Jovem Pan Fm Manaus */,
 				8325763F1DB8FC21009B33EC /* Products */,
+				832576551DB8FDD7009B33EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +66,21 @@
 				832576411DB8FC22009B33EC /* AppDelegate.swift */,
 				832576431DB8FC22009B33EC /* ViewController.swift */,
 				832576451DB8FC22009B33EC /* Main.storyboard */,
+				832576531DB8FCE7009B33EC /* RadioPlayer.swift */,
 				832576481DB8FC22009B33EC /* Assets.xcassets */,
 				8325764A1DB8FC22009B33EC /* LaunchScreen.storyboard */,
 				8325764D1DB8FC22009B33EC /* Info.plist */,
 			);
 			path = "Jovem Pan Fm Manaus";
+			sourceTree = "<group>";
+		};
+		832576551DB8FDD7009B33EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				832576581DB8FDE0009B33EC /* MediaPlayer.framework */,
+				832576561DB8FDD7009B33EC /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +115,7 @@
 				TargetAttributes = {
 					8325763D1DB8FC21009B33EC = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LG8A887668;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832576541DB8FCE7009B33EC /* RadioPlayer.swift in Sources */,
 				832576441DB8FC22009B33EC /* ViewController.swift in Sources */,
 				832576421DB8FC22009B33EC /* AppDelegate.swift in Sources */,
 			);
@@ -258,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LG8A887668;
 				INFOPLIST_FILE = "Jovem Pan Fm Manaus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.easytidev.Jovem-Pan-Fm-Manaus";
@@ -270,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LG8A887668;
 				INFOPLIST_FILE = "Jovem Pan Fm Manaus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.easytidev.Jovem-Pan-Fm-Manaus";
