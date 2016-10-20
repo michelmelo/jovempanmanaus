@@ -12,10 +12,17 @@ import MediaPlayer
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var myVolumeController: UISlider!
+    @IBAction func controlVolume(_ sender: AnyObject) {
+        RadioPlayer.sharedInstance.mudaVolume(volume: myVolumeController.value)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
   
-        
         /*CHAMA A FUNCAO beginReceivingRemoteControlEvents DO ARQUIVO APPDELEGATE.
          FOI COM ELA QUE CONSEGUIMOS RESOLVER O CONTROLE DO STREAMING VIA LOCK SCREEN E CENTRAL DE CONTROLE
          RESPONSÁVEL PELA ADAPTACAO: PATRIC OLIVEIRA
@@ -65,6 +72,34 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func toggle() {//VERIFICA SE ESTÁ TOCANDO
+        
+        if RadioPlayer.sharedInstance.currentlyPlaying() {
+            pauseRadio()
+        } else {
+            playRadio()
+        }
+    }
+    
+    @IBAction func playButtonPressed(_ sender: AnyObject) {
+        
+        toggle()//COMUTA PARA O STREAMING
+    }
+    
+    
+    func playRadio() {
+        RadioPlayer.sharedInstance.play()
+        //playButton.setTitle("Pause", for: UIControlState.normal)
+        playButton.setImage(#imageLiteral(resourceName: "pause"), for: UIControlState.normal)
+    }
+    
+    func pauseRadio() {
+        RadioPlayer.sharedInstance.pause()
+        //playButton.setTitle("Play", for: UIControlState.normal)
+        playButton.setImage(#imageLiteral(resourceName: "play"), for: UIControlState.normal)
+        
+    }
+    
+    
 }
 

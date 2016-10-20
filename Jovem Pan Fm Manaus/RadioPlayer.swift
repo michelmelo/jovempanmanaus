@@ -23,6 +23,7 @@ class RadioPlayer {
     
     func play() {
         player.play()
+        print(player.reasonForWaitingToPlay)
         isPlaying = true
     }
     
